@@ -1,0 +1,227 @@
+<!-- Example page -->
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <title>Ma page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="../css/malib.css">
+    </head>
+    <body class="grid">
+        <header class="line">
+            <h1>Ma librairie</h1>
+        </header>
+
+        <section class="line">
+            <div id="menu" class="large">
+                <!-- This button will be displayed only when device width is less than 200px -->
+                <button id="showMenu">Menu</button>
+                <!-- -->
+
+                <!-- Menu -->
+                <ul>
+                    <li>Accueil</li>
+                    <li>
+                        Menu
+                        <ul>
+                            <li>Lorem Ipsum</li>
+                            <li>Dolor sit amet</li>
+                        </ul>
+                    </li>
+                    <li>Contact
+                        <ul>
+                            <li>Demande de renseignements</li>
+                            <li>Autre</li>
+                        </ul>
+                    </li>
+                    <li>?</li>
+                    <li>Consectur</li>
+                    <li>Adipiscingggggggg</li>
+                    <li>Elit</li>
+                    <li>Fusce</li>
+                    <li>Sed</li>
+                </ul>
+                <!-- Fin du menu -->
+            </div>
+        </section>
+
+        <!-- Conteneur principal -->
+        <section class="line" id="main">
+            <div class="offset-0 span-8">
+                <div class="line-margin">
+                    <div class="large">
+                        <img src="../img/photo.jpg" alt="paysage">
+                        <p>Une photo...</p>
+                    </div>
+               </div>
+
+               <div class="line-margin">
+                   <div class="offset-0 span-5">
+                       <h4 class="title">S'Inscrire</h4>
+                       <form>
+                           <p><input type="text" placeholder="Login"></p>
+                           <p><input type="password" placeholder="Mot de passe"></p>
+                           <p><input type="password" placeholder="Confirmation"></p>
+                           <p>
+                               <label>Date de naissance :</label>
+                               <input type="date" placeholder="Mot de passe">
+                           </p>
+                           <p>
+                               <label>Pays :</label>
+                               <select>
+                                   <option>France</option>
+                                   <option>Belgique</option>
+                                   <option>Suisse</option>
+                                   <option>Canada</option>
+                               </select>
+                           </p>
+                           <p>Sexe : H <input type="radio" name="sexe"> F <input type="radio" name="sexe"></p>
+                           <p><input type="submit" value="Inscription"></p>
+                       </form>
+                   </div>
+
+                   <div class="offset-1 span-4">
+                       <h4 class="title">Se connecter</h4>
+                       <form>
+                           <p><input type="text" placeholder="Login"></p>
+                           <p><input type="password" placeholder="Mot de passe"></p>
+                           <p>Mémoriser ? <input type="checkbox"></p>
+                           <p><input type="submit" value="Connexion"></p>
+                       </form>
+                   </div>
+               </div>
+
+               <div class="content line-margin">
+                   <div class="large">
+                       <h2><small>Titre avec balise small</small></h2>
+                       <h2>Titre sans balise small</h2>
+                       <p>Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule missae sub iugum factae sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo monte Amano disparantur. <a href="#">Nulla facilisi.</a></p>
+
+                       <p><span class="red">Alii summum</span> decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.</p>
+
+                       <p>Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio destitutus sine ullo interiret obstaculo.</p>
+                       Exemple de code CSS : <code>
+#menu {
+    background-color: white;
+    margin: 0 0 1rem 0;
+    width: 100%; // pour ne pas avoir de gouttières
+    border-bottom: 1px solid #CCC;
+
+    li {
+        font-size: 1rem;
+        border-bottom: 1px solid grey;
+        padding: .25rem;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+#menu > ul { display: none; }
+
+#menu:hover > ul, #menu > ul > li  {
+    display: block;
+    width: 100%;
+}
+
+#menu > ul > li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+                       </code>
+
+                       Du code CSS dans une balise pre :
+                       <pre>
+#menu > ul > li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+                       </pre>
+
+                       <blockquote>
+                           Une citation
+                       </blockquote>
+
+                       <p>Enregistrez le document en appuyant sur <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+                       <p>
+                           <ul>
+                               <li>a</li>
+                               <li>b</li>
+                               <li>c</li>
+                           </ul>
+
+                           <ul class="square">
+                               <li>a</li>
+                               <li>b</li>
+                               <li>c</li>
+                           </ul>
+                       </p>
+
+                       <p>Adolescebat autem obstinatum propositum erga haec et similia multa scrutanda, stimulos admovente regina, quae abrupte mariti fortunas trudebat in exitium praeceps, cum eum potius lenitate feminea ad veritatis humanitatisque viam reducere utilia suadendo deberet, ut in Gordianorum actibus factitasse Maximini truculenti illius imperatoris rettulimus coniugem.</p>
+
+                       <p>Quid enim tam absurdum quam delectari multis inanimis rebus, ut honore, ut <span class="green">gloria</span>, ut aedificio, ut vestitu cultuque corporis, animante virtute praedito, eo qui vel amare vel, ut ita dicam, redamare possit, non admodum delectari? Nihil est enim remuneratione benevolentiae, nihil vicissitudine studiorum officiorumque iucundius.</p>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Menu droite -->
+           <div class="offset-0 span-2" id="menu_right">
+               <div class="line-margin-3">
+                   <div class="large">
+                       <h4 class="title">Newsletter</h4>
+                       <form>
+                           <p><input type="text" placeholder="Mail"></p>
+                           <p><input type="submit" value="S'abonner"></p>
+                       </form>
+                   </div>
+               </div>
+
+               <div class="line-margin-3">
+                   <div class="large">
+                       <h4 class="title">L.P CISIIE</h4>
+                       <p><a href="#">Informations</a></p>
+                   </div>
+               </div>
+
+               <div class="line-margin-3">
+                   <div class="posts large">
+                       <h4 class="title">Posts</h4>
+                       <ul>
+                           <li><a href="#" class="titre">dolor sit amet</a>par <a href="#">Lorem Ipsum</a></li>
+                           <li><a href="#" class="titre">consectetur adipiscing</a>par <a href="#">Lorem Ipsum</a></li>
+                           <li><a href="#" class="titre">Phasellus laoreet</a>par <a href="#">Lorem Ipsum</a></li>
+                           <li><a href="#" class="titre">felis non ligula</a>par <a href="#">Lorem Ipsum</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- Fin du conteneur principal -->
+
+        <footer class="line">
+            <div class="large">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+      lacinia est nec sagittis lacinia. <a href="#">Nulla facilisi.</a> Aliquam erat
+      volutpat. Praesent viverra nunc nec mi eleifend placerat. Nulla
+      ullamcorper ornare tortor, id aliquam nisl dignissim at. Nunc
+      orci est, malesuada sed lacinia feugiat, interdum ac
+      enim. Vestibulum fringilla vulputate accumsan. Fusce semper
+      tristique sapien, non pulvinar libero pellentesque ut. Nulla
+      facilisi. Nulla suscipit lorem at tincidunt laoreet. Mauris nec
+      auctor lorem. In venenatis vehicula sem, eu tempor eros tempor
+      mattis. Sed blandit accumsan est tristique tempus. Ut quis nunc
+      vitae nisl pulvinar sollicitudin vitae ac eros. Cras mollis
+      velit arcu, non.
+            </div>
+        </footer>
+
+        <div onclick="window.location.href='#'" id="retour_top"><span>^</span></div>
+    </body>
+</html>

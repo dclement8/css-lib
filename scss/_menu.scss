@@ -1,0 +1,100 @@
+#menu {
+    background-color: white;
+    margin: 0 0 1rem 0;
+    width: 100%; // pour ne pas avoir de gouttières
+    border-bottom: 1px solid #CCC;
+
+    li {
+        font-size: 1rem;
+        border-bottom: 1px solid grey;
+        padding: .25rem;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+#menu > ul { display: none; }
+
+#menu:hover > ul, #menu > ul > li  {
+    display: block;
+    width: 100%;
+}
+
+#menu > ul > li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu > ul > li:hover {
+    color: #4078C6;
+    cursor: pointer;
+}
+
+#menu > ul > li > ul {
+    display: none;
+    color: black;
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+#menu > ul > li:hover > ul {
+    display: block;
+
+    li {
+        background-color: #DDEEFF;
+        width: 100%;
+    }
+}
+
+#menu > ul > li > ul > li:hover {
+    color: #4078C6;
+    background-color: #E8E8E8;
+}
+
+#showMenu {
+    display: block;
+    width: 100%;
+}
+
+#menu_right p { padding-top: .5rem; }
+
+@media screen and (min-width: 300px) {
+    #showMenu { display: none; }
+    #menu > ul { display: block; }
+
+    #menu > ul > li:nth-child(odd) { border-bottom: .2rem solid lightblue; }
+    #menu > ul > li:nth-child(odd):hover { border-bottom: .2rem solid darken(lightblue, 30%); }
+
+    #menu > ul > li:nth-child(even) { border-bottom: .2rem solid lightgreen; }
+    #menu > ul > li:nth-child(even):hover { border-bottom: .2rem solid darken(lightgreen, 30%); }
+
+    #menu > ul > li {
+        display: inline-block;
+        padding: .2rem .5rem .2rem;
+        width: 6rem;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    #menu > ul > li:hover > ul {
+        display: block;
+        position: absolute;
+        z-index: 10;
+
+        li {
+            background-color: white;
+            padding: .4rem;
+            border: 1px solid grey;
+            font-size: .8rem;
+            width: 16rem;
+            margin-left: -.52rem;
+        }
+    }
+
+    #menu > ul > li > ul > li:first-child { margin-top: .8rem; }
+}

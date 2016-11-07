@@ -1,0 +1,30 @@
+label {
+	display: inline-block;
+    width: 8rem;
+    text-align: left;
+}
+
+form {
+	text-align: left;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+
+input, label { max-width: 100%; }
+
+select { background-color: #E8E8E8; }
+
+input, select {
+	border: 1px solid #D9D9D9;
+	padding: .3rem;
+}
+
+input[type=submit] {
+	background-color: #4B3C63;
+	padding: .5rem;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: lighten(#4B3C63, 10%);
+}

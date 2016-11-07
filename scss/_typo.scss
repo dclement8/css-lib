@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    color: black;
+}
+
+code, pre, kbd { font-family: monospace; }
+code { font-size: 11px; }
+
+/* inline tags */
+mark      { background-color: yellow; color: black; }
+del       { text-decoration: line-through; }
+ins, u    { text-decoration: underline; }
+strong, b { font-weight: bold; }
+em, i     { font-style: italic; }
+abbr      { color: #333333; }
+
+header, #menu, footer { font-family: 'Roboto', sans-serif; }
+
+// h elements
+@for $i from 1 through 6 {
+    h#{$i} {
+        $h_font-size : (6 - $i) * 0.25;
+        color: black;
+        font-size: $h_font-size + 1rem;
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+
+    	small, .small {
+    		color: grey;
+    		font-size: $h_font-size + .75rem;
+    	}
+    }
+}
+
+h4.title, footer { color: white; }
+
+input, select { color: #777777; }
+
+input[type=submit] { color: white; }
+
+#retour_top {
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+}
+
+#menu_right a { text-decoration: none; color: #3D2E4E; }
+#menu_right a:hover { color: #B46D7F; }
+
+header a, footer a { text-decoration: none; color: #D2D2D2; }
+header a:hover, footer a:hover { color: darken(#D2D2D2, 10%); }
