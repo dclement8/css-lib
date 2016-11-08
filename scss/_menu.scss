@@ -24,11 +24,7 @@
     width: 100%;
 }
 
-#menu > ul > li {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-}
+#menu > ul > li { overflow: hidden; }
 
 #menu > ul > li:hover {
     color: #4078C6;
